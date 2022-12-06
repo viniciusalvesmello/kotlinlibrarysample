@@ -1,0 +1,49 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+    desc "Run detekt tools according to the current baseline"
+        lane :detekt do
+        gradle(task: "detekt")
+    end
+
+    desc "Runs all tests"
+    lane :test do
+        gradle(task: "test")
+    end
+
+    desc "Generate or Update Dokka HTML"
+        lane :dokka do
+        gradle(task: "clean dokkaHtml")
+    end
+
+    desc "Generates a new release"
+        lane :publish do
+        gradle(
+            task: "clean artifactoryPublish",
+            properties: {
+                "publishingGroupId" => ENV['PUBLISHING_GROUP_ID'],
+                "publishingArtifactId" => ENV['PUBLISHING_ARTIFACT_ID'],
+                "publishingVersion" => ENV['CM_TAG'],
+                "artifactoryUrl" => ENV['ARTIFACTORY_URL'],
+                "artifactoryRepoKey" => ENV['ARTIFACTORY_REPO_KEY'],
+                "artifactoryUserName" => ENV['ARTIFACTORY_USER_NAME'],
+                "artifactoryPassword" => ENV['ARTIFACTORY_PASSWORD']
+            }
+        )
+    end
+end

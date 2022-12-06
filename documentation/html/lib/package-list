@@ -1,0 +1,15 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants////PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/index.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants/Constants.String///PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/-constants/-string/index.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants/Constants.String/EMPTY/#/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/-constants/-string/-e-m-p-t-y.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants/Constants.String/REGEX_ONLY_LETTERS_NUMBERS/#/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/-constants/-string/-r-e-g-e-x_-o-n-l-y_-l-e-t-t-e-r-s_-n-u-m-b-e-r-s.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants/Constants.String/REGEX_ONLY_NUMBERS/#/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/-constants/-string/-r-e-g-e-x_-o-n-l-y_-n-u-m-b-e-r-s.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample.constants/Constants///PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample.constants/-constants/index.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample////PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample/index.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample//handle/kotlin.String?#kotlin.String/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample/handle.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample//onlyLettersAndNumbers/kotlin.String#kotlin.String/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample/only-letters-and-numbers.html
+$dokka.location:io.github.viniciusalvesmello.kotlinlibrarysample//onlyNumbers/kotlin.String#kotlin.String/PointingToDeclaration/lib/io.github.viniciusalvesmello.kotlinlibrarysample/only-numbers.html
+io.github.viniciusalvesmello.kotlinlibrarysample
+io.github.viniciusalvesmello.kotlinlibrarysample.constants
+
