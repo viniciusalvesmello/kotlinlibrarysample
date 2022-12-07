@@ -26,7 +26,7 @@ workflows:
         - tag
     scripts:
       - name: Detekt
-        script: fastlane run_detekt
+        script: fastlane detekt
       - name: Tests
         script: fastlane test
       - name: Publish Library
