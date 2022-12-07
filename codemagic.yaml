@@ -1,0 +1,33 @@
+workflows:
+  pull_request_check:
+    name: Pull request check
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    environment:
+      groups:
+        - kotlin-library
+    triggering:
+      events:
+        - pull_request
+    scripts:
+      - name: Detekt
+        script: fastlane run_detekt
+      - name: Tests
+        script: fastlane test
+  publish_lib:
+    name: Publish Library
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    environment:
+      groups:
+        - kotlin-library
+    triggering:
+      events:
+        - tag
+    scripts:
+      - name: Detekt
+        script: fastlane run_detekt
+      - name: Tests
+        script: fastlane test
+      - name: Publish Library
+        script: fastlane publish_lib
