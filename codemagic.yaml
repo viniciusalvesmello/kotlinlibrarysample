@@ -30,4 +30,4 @@ workflows:
       - name: Tests
         script: fastlane test
       - name: Publish Library
-        script: fastlane publish_lib
+        script: fastlane publish
